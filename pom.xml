@@ -3,27 +3,42 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>am.itspace</groupId>
-        <artifactId>edu-quiz</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.1.3</version>
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <artifactId>edu-quiz-web</artifactId>
+    <groupId>am.itspace</groupId>
+    <artifactId>edu-quiz</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>edu-quiz-web</name>
-    <description>edu-quiz-web</description>
+
+    <packaging>pom</packaging>
+    <modules>
+        <module>edu-quiz-web</module>
+        <module>edu-quiz-rest</module>
+        <module>edu-quiz-common</module>
+    </modules>
+    <name>edu-quiz</name>
+    <description>edu-quiz</description>
     <properties>
         <java.version>17</java.version>
     </properties>
     <dependencies>
         <dependency>
+<<<<<<< HEAD
             <groupId>am.itspace</groupId>
             <artifactId>edu-quiz-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
+=======
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+>>>>>>> 1e7a442 (Mvs)
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
+<<<<<<< HEAD
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
         <dependency>
@@ -42,6 +57,21 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+=======
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+>>>>>>> 1e7a442 (Mvs)
         </dependency>
     </dependencies>
 
@@ -50,6 +80,17 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+<<<<<<< HEAD
+=======
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+>>>>>>> 1e7a442 (Mvs)
             </plugin>
         </plugins>
     </build>
