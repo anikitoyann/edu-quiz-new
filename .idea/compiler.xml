@@ -23,6 +23,11 @@
         <module name="edu-quiz-common" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="edu-quiz-common (1)" target="1.5" />
+      <module name="edu-quiz-common (2)" target="17" />
+      <module name="edu-quiz-common (3)" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
